@@ -24,7 +24,7 @@ if [ "$answer" != 'y' ]; then
 fi
 
 # Change current branch to dev
-if [ `git rev-parse --abbrev-ref HEAD` != 'dev']; then
+if [ `git rev-parse --abbrev-ref HEAD` != 'dev' ]; then
     echo 'Change branch to dev'
     git checkout dev
 fi
